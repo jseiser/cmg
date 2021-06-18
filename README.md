@@ -41,9 +41,11 @@ cmg-7f5d76ddb9-pmdq2   1/1     Running   0          19s
 ## Things I wish I could change
 
 1. Input file format is less than ideal.
-2. Currently adding additinal devices/rules requires editing the source code.  Would be preferable if data ingestion could be seperate from business rules.
+2. Currently adding additional devices/rules requires editing the source code.  Would be preferable if data ingestion could be seperate from business rules.
 3. No CI/CD Process is in place.  Would be nice to have time to configure Circle/Travis/Github Action to Spin up a KIND cluster, deploy the chart and verify it runs.
 4. Helm Chart is not published.
+5. No tests for python code.  Since I knew I wouldnt get to a CI process, I didnt see any point in spending my 4 hours on the tests.
+6. No Infra code.  I only have access to AWS, and I didnt want to pay for the spend to spin up physical resources via TF.
 
 ## Adding additional Devices/Rules
 

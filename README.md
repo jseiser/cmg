@@ -1,7 +1,6 @@
 # CMG 
 
-Python Script to process text files and return status of instruments.  Helm Chart Included
-
+Python Web App which accepts POSTS requests to `/process` endpoint.  The format of the text file must be correct.
 ### Tech
 
 * [python](https://www.python.org/)
@@ -42,8 +41,9 @@ cmg-7f5d76ddb9-pmdq2   1/1     Running   0          19s
 
 1. Input file format is less than ideal.
 2. Currently adding additinal devices/rules requires editing the source code.  Would be preferable if data ingestion could be seperate from business rules.
-3. No CI/CD Process is in place.  Would be nice to have time to configure Circle/Travis/Github Action to Spin up a KIND cluster, deploy the chart and verify it runs.
+3. Slight CI is in place, but no chance to do proper CD
 4. Helm Chart is not published.
+5. No error handling in the code.
 
 ## Adding additional Devices/Rules
 
